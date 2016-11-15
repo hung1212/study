@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/new_file.js"></script>
+	</head>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		
+		* {
+			padding: 0;
+			margin: 0;
+			font-size: 12px;
+		}
+		
+		.box1 {
+			width: 550px;
+			margin: auto;
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		
+		.boxex {
+			margin: 50px;
+		}
+		
+		.box {
+			position: relative;
+			left: 0;
+			top: 0;
+			border: 1px solid #000;
+			height: 452px;
+			width: 452px;
+		}
+		
+		.box .boxDiv {
+			width: 45px;
+			height: 45px;
+			border: 1px solid #e8e8e8;
+			box-sizing: border-box;
+		}
+		
+		.box-top li,
+		.box-left li {
+			font-weight: bold;
+			font-size: 24px;
+			list-style: none;
+			width: 45px;
+			height: 45px;
+		}
+		
+		.box-top {
+			overflow: hidden;
+			/*margin-left: 15px;*/
+			text-align: center;
+		}
+		
+		.box-top li {
+			float: left;
+			display: inline-block;
+		}
+		
+		.box-left {
+			position: absolute;
+			left: 0px;
+			top: 45px;
+			text-align: center;
+		}
+		
+		.box-left li {
+			line-height: 45px;
+		}
+		
+		.cur {
+			background: red;
+		}
+		
+		.top {
+			width: 45px;
+			height: 45px;
+			border: 1px solid #e8e8e8;
+			box-sizing: border-box;
+			background: red;
+			border-top: 10px solid blue !important
+		}
+		
+		.left {
+			width: 45px;
+			height: 45px;
+			border: 1px solid #e8e8e8;
+			box-sizing: border-box;
+			background: red;
+			border-left: 10px solid blue !important;
+		}
+		.right {
+			width: 45px;
+			height: 45px;
+			border: 1px solid #e8e8e8;
+			box-sizing: border-box;
+			background: red;
+			border-right: 10px solid blue !important
+		}
+		.bottom {
+			width: 45px;
+			height: 45px;
+			border: 1px solid #e8e8e8;
+			box-sizing: border-box;
+			background: red;
+			border-bottom: 10px solid blue !important;
+			
+		}
+		.border{
+				border: 1px solid #e8e8e8;
+			box-sizing: border-box;
+		}
+		
+		.bc{
+			background: #000000;
+		}
+	</style>
+
+	<body>
+		<div class="box1">
+			<div class="boxex">
+				<div class="box-top">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+				</div>
+				<div class="box">
+				</div>
+				<div class="box-left">
+					<ul>
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box-right">
+				<input type="text" />
+				<input type="button" value="执行" />
+			</div>
+		</div>
+	</body>
+
+</html>
