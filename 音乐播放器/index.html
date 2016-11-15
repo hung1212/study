@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/new_file.js"></script>
+
+	</head>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+		}
+		
+		.box {
+			padding-bottom: 100px;
+			width: 1000px;
+			margin: 100px auto 0;
+			background: lemonchiffon;
+			height: 700px;
+			border: 1px solid #000;
+			overflow: hidden;
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		.top{
+			margin-top: 100px;
+		}
+		.box-top{
+			margin-top: 0;
+		}
+		.box-right{
+			margin-right: 0;
+		}
+		.box-bottom{
+			margin-top: 250px;
+		}
+		.box-left{
+			margin-left: 0;
+		}
+		
+		.remove{
+			display: inline-block;
+			float: left;
+			width: 240px;
+		}
+		
+		.yysc{
+			margin: 150px 0 0 150px;
+		}
+		.yysc .buttonsc2{
+			display: block;
+			margin:  10px 0 0 10px;
+		}
+		.boxgd {
+			height: 400px;
+			background: #fff;
+			margin: 0 auto;
+			padding: 5px 0 0 10px;
+			overflow: auto;
+			
+		}
+		.boxgd p{
+			font-size: 16px;
+			line-height: 30px;
+			cursor: pointer;
+			display: inline-block;
+			width: 400px;
+			padding-left: 10px;
+		}
+		
+		.yy {
+			width: 500px;
+			margin:  0  0 0 0;
+			display: inline-block;
+			float: left;
+		}
+		
+		audio {
+			width: 500px;
+		}
+		
+		#box500{
+			width: 500px;
+			position: relative;
+		}
+		
+		.budiv {
+			width: 100px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		
+		.button2 {
+			float: right;
+		}
+		.cur{
+			color: red;
+		}
+		
+		#mySelect{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+
+		}
+		.tsyy{
+			position: absolute;
+			left: 750px;
+			top: 100px;
+			
+		}
+		.tsyy .tsyy-left{
+			float: left;
+		}
+		.tsyy .tsyy-left input{
+			display:block
+		}
+		.buttontj{
+			position: relative;
+			top: 50px;
+			left: 10px;
+		}
+		.boxgd p input{
+			cursor: pointer;
+			
+		}
+	</style>
+
+	<body onkeydown="ondown(event)">
+		<div class="box boxKey">
+			<div class="top">
+				<div class="remove">
+					<div class="yysc">
+						<button class="buttonscx">全选</button>
+						<button class="buttonscbx">全不选</button>
+						<button class="buttonsc2" >删除音乐</button>
+					</div>
+				</div>
+				<div class="yy">
+					<div class="boxgd"></div>
+					<audio class="audio" preload controls="controls" autoplay2="autoplay"></audio>
+					<div id="box500">
+			 			<div class="budiv">
+							<button class="button1" onclick="xys1()">上一首</button>
+							<button class="button2" onclick="xys2()">下一首</button>							
+						</div>
+						
+						<select id="mySelect">
+							<option value="1">顺序循环</option>
+							<option value="2">随机播放</option>
+							<option value="3">单曲循环</option>
+							<option value="4">列表循环</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="tsyy">
+					<div class="tsyy-left">
+						歌名：<input type="text" id="tjinput1"  />
+						路径：<input type="text" id="tjinput2" />
+						歌手：<input type="text" id="tjinput3" />
+					</div>
+					<button class="buttontj">添加音乐</button>
+					
+		   		</div>
+	   		</div>
+		</div>
+		
+	</body>
+
+</html>
